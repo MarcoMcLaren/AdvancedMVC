@@ -1,0 +1,42 @@
+﻿@model AdvancedMVC.Models.CourseAssignmentsMarking
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CourseAssignmentsMarking</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Courses.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Courses.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Staff.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Staff.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Students.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Students.Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
