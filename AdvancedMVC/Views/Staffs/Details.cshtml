@@ -25,6 +25,13 @@
         <dd>
             @Html.DisplayFor(model => model.Name)
         </dd>
+        <dt>
+            #Assignments Marked
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CourseAssignmentsMarking.Count(x => x.CourseID == model.ID)
+        </dd>
 
     </dl>
 </div>
