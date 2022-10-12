@@ -30,7 +30,8 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.CourseAssignmentsMarking.Count(x => x.CourseID == model.ID)
+            @{ var counter = Model.CourseAssignmentsMarking.Where(x => x.MarkerID == Model.ID).Count();}
+            @Html.DisplayFor(model => counter)
         </dd>
 
     </dl>

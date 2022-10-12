@@ -40,7 +40,7 @@ namespace AdvancedMVC.Controllers
         public ActionResult Create()
         {
             ViewBag.CourseID = new SelectList(db.Courses, "ID", "Name");
-            ViewBag.MarkerID = new SelectList(db.Staff, "ID", "Title");
+            ViewBag.MarkerID = new SelectList(db.Staff, "ID", "Name");
             ViewBag.StudentID = new SelectList(db.Students, "ID", "Name");
             return View();
         }
